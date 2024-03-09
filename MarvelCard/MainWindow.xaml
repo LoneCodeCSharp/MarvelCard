@@ -1,0 +1,240 @@
+﻿<Window x:Class="MarvelCard.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MarvelCard"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="600" Width="1400">
+    <Border x:Name="backbord" MouseLeftButtonDown="backbord_MouseLeftButtonDown" Background="#252525" >
+    <Grid >
+        <Border x:Name="b1" MouseEnter="b1_MouseEnter" Width="180" Height="250" CornerRadius="10" Margin="-480 80 0 0">
+            
+            <Border.Background>
+                <ImageBrush ImageSource="Img/hulk.jpg" Stretch="Fill"/>
+            </Border.Background>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition/>
+                    <RowDefinition Height="80"/>
+                </Grid.RowDefinitions>
+                <Border Grid.Row="0" Height="15" Width="15" Background="White" HorizontalAlignment="Left" Margin="10 0 0 0" CornerRadius="10">
+                    <Border.Effect>
+                        <DropShadowEffect BlurRadius="10" ShadowDepth="0" Color="White" Opacity="1.5" Direction="0"/>
+                    </Border.Effect>
+                    <TextBlock Text="339" FontSize="7" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                </Border>
+                <Border Grid.Row="0" Height="20" Width="100" Background="#1083bf" CornerRadius="10 0 10 0">
+                    <TextBlock Style="{StaticResource ListValue}" Foreground="#e58d09" FontSize="20" Text="Hulk" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                </Border>
+                <Border Grid.Row="2" Background="Black" Height="65" Width="130" HorizontalAlignment="Right" Opacity="0.6"/>
+                <Grid Grid.Row="2" Background="Transparent" Height="60" Width="130" HorizontalAlignment="Right">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition Width="30"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <TextBlock Style="{StaticResource ListSkill}" Grid.Row="0" Grid.Column="0" Text="Intelligence"/>
+                    <TextBlock Style="{StaticResource ListSkill}" Grid.Row="1" Grid.Column="0" Text="Power" />
+                    <TextBlock Style="{StaticResource ListSkill}" Grid.Row="2" Grid.Column="0" Text="Speed and agility"/>
+                    <TextBlock Style="{StaticResource ListSkill}" Grid.Row="3" Grid.Column="0" Text="Special skills" />
+                    <TextBlock Style="{StaticResource ListSkill}" Grid.Row="4" Grid.Column="0" Text="Fighting skills" />
+                    <TextBlock Style="{StaticResource ListValue}" Grid.Row="0" Grid.Column="1" Text="68" />
+                    <TextBlock Style="{StaticResource ListValue}" Grid.Row="1" Grid.Column="1" Text="499" />
+                    <TextBlock Style="{StaticResource ListValue}" Grid.Row="2" Grid.Column="1" Text="322" />
+                    <TextBlock Style="{StaticResource ListValue}" Grid.Row="3" Grid.Column="1" Text="122" />
+                    <TextBlock Style="{StaticResource ListValue}" Grid.Row="4" Grid.Column="1" Text="266" />
+                </Grid>
+            </Grid>
+        </Border>
+        <Border x:Name="b2" MouseEnter="b2_MouseEnter" Width="180" Height="250" CornerRadius="10" Margin="-280 45 0 0">
+            
+            <Border.Background>
+                <ImageBrush ImageSource="Img/spiderman.jpg" Stretch="Fill"/>
+            </Border.Background>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition/>
+                    <RowDefinition Height="80"/>
+                </Grid.RowDefinitions>
+                <Border Grid.Row="0" Height="15" Width="15" Background="White" HorizontalAlignment="Left" Margin="10 0 0 0" CornerRadius="10">
+                    <Border.Effect>
+                        <DropShadowEffect BlurRadius="10" ShadowDepth="0" Color="White" Opacity="1.5" Direction="0"/>
+                    </Border.Effect>
+                    <TextBlock Text="429" FontSize="7" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                </Border>
+                <Border Grid.Row="0" Height="20" Width="100" Background="#1083bf" CornerRadius="10 0 10 0">
+                    <TextBlock Style="{StaticResource ListValue}" Foreground="#e58d09" FontSize="20" Text="Spider Man" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                </Border>
+                <Border Grid.Row="2" Background="Black" Height="65" Width="130" HorizontalAlignment="Right" Opacity="0.6"/>
+                <Grid Grid.Row="2" Background="Transparent" Height="60" Width="130" HorizontalAlignment="Right">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition Width="30"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <TextBlock Style="{StaticResource ListSkill}" Grid.Row="0" Grid.Column="0" Text="Intelligence"/>
+                    <TextBlock Style="{StaticResource ListSkill}" Grid.Row="1" Grid.Column="0" Text="Power" />
+                    <TextBlock Style="{StaticResource ListSkill}" Grid.Row="2" Grid.Column="0" Text="Speed and agility"/>
+                    <TextBlock Style="{StaticResource ListSkill}" Grid.Row="3" Grid.Column="0" Text="Special skills" />
+                    <TextBlock Style="{StaticResource ListSkill}" Grid.Row="4" Grid.Column="0" Text="Fighting skills" />
+                    <TextBlock Style="{StaticResource ListValue}" Grid.Row="0" Grid.Column="1" Text="281" />
+                    <TextBlock Style="{StaticResource ListValue}" Grid.Row="1" Grid.Column="1" Text="291" />
+                    <TextBlock Style="{StaticResource ListValue}" Grid.Row="2" Grid.Column="1" Text="216" />
+                    <TextBlock Style="{StaticResource ListValue}" Grid.Row="3" Grid.Column="1" Text="266" />
+                    <TextBlock Style="{StaticResource ListValue}" Grid.Row="4" Grid.Column="1" Text="289" />
+                </Grid>
+            </Grid>
+        </Border>
+        <Border x:Name="b3" MouseEnter="b3_MouseEnter" Width="180" Height="250" CornerRadius="10">
+            <Border.Background>
+                <ImageBrush ImageSource="Img/ironman.jpeg" Stretch="Fill"/>
+            </Border.Background>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition/>
+                    <RowDefinition Height="80"/>
+                </Grid.RowDefinitions>
+                <Border Grid.Row="0" Height="15" Width="15" Background="White" HorizontalAlignment="Left" Margin="10 0 0 0" CornerRadius="10">
+                    <Border.Effect>
+                        <DropShadowEffect BlurRadius="10" ShadowDepth="0" Color="White" Opacity="1.5" Direction="0"/>
+                    </Border.Effect>
+                    <TextBlock Text="255" FontSize="7" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                </Border>
+                <Border Grid.Row="0" Height="20" Width="100" Background="#1083bf" CornerRadius="10 0 10 0">
+                    <TextBlock Style="{StaticResource ListValue}" Foreground="#e58d09" FontSize="20" Text="Iron Man" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                </Border>
+                <Border Grid.Row="2" Background="Black" Height="65" Width="130" HorizontalAlignment="Right" Opacity="0.6"/>
+                <Grid Grid.Row="2" Background="Transparent" Height="60" Width="130" HorizontalAlignment="Right">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition Width="30"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <TextBlock Style="{StaticResource ListSkill}" Grid.Row="0" Grid.Column="0" Text="Intelligence"/>
+                    <TextBlock Style="{StaticResource ListSkill}" Grid.Row="1" Grid.Column="0" Text="Power" />
+                    <TextBlock Style="{StaticResource ListSkill}" Grid.Row="2" Grid.Column="0" Text="Speed and agility"/>
+                    <TextBlock Style="{StaticResource ListSkill}" Grid.Row="3" Grid.Column="0" Text="Special skills" />
+                    <TextBlock Style="{StaticResource ListSkill}" Grid.Row="4" Grid.Column="0" Text="Fighting skills" />
+                    <TextBlock Style="{StaticResource ListValue}" Grid.Row="0" Grid.Column="1" Text="388" />
+                    <TextBlock Style="{StaticResource ListValue}" Grid.Row="1" Grid.Column="1" Text="409" />
+                    <TextBlock Style="{StaticResource ListValue}" Grid.Row="2" Grid.Column="1" Text="354" />
+                    <TextBlock Style="{StaticResource ListValue}" Grid.Row="3" Grid.Column="1" Text="421" />
+                    <TextBlock Style="{StaticResource ListValue}" Grid.Row="4" Grid.Column="1" Text="213" />
+                </Grid>
+            </Grid>
+        </Border>
+        <Border x:Name="b4" MouseEnter="b4_MouseEnter" Width="180" Height="250" CornerRadius="10" Margin="280 0 0 0">
+            <Border.Background>
+                <ImageBrush ImageSource="Img/wolverine.jpg" Stretch="Fill"/>
+            </Border.Background>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition/>
+                    <RowDefinition Height="80"/>
+                </Grid.RowDefinitions>
+                <Border Grid.Row="0" Height="15" Width="15" Background="White" HorizontalAlignment="Left" Margin="10 0 0 0" CornerRadius="10">
+                    <Border.Effect>
+                        <DropShadowEffect BlurRadius="10" ShadowDepth="0" Color="White" Opacity="1.5" Direction="0"/>
+                    </Border.Effect>
+                    <TextBlock Text="021" FontSize="7" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                </Border>
+                <Border Grid.Row="0" Height="20" Width="100" Background="#1083bf" CornerRadius="10 0 10 0">
+                    <TextBlock Style="{StaticResource ListValue}" Foreground="#e58d09" FontSize="20" Text="Wolverine" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                </Border>
+                <Border Grid.Row="2" Background="Black" Height="65" Width="130" HorizontalAlignment="Right" Opacity="0.6"/>
+                <Grid Grid.Row="2" Background="Transparent" Height="60" Width="130" HorizontalAlignment="Right">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition Width="30"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <TextBlock Style="{StaticResource ListSkill}" Grid.Row="0" Grid.Column="0" Text="Intelligence"/>
+                    <TextBlock Style="{StaticResource ListSkill}" Grid.Row="1" Grid.Column="0" Text="Power" />
+                    <TextBlock Style="{StaticResource ListSkill}" Grid.Row="2" Grid.Column="0" Text="Speed and agility"/>
+                    <TextBlock Style="{StaticResource ListSkill}" Grid.Row="3" Grid.Column="0" Text="Special skills" />
+                    <TextBlock Style="{StaticResource ListSkill}" Grid.Row="4" Grid.Column="0" Text="Fighting skills" />
+                    <TextBlock Style="{StaticResource ListValue}" Grid.Row="0" Grid.Column="1" Text="216" />
+                    <TextBlock Style="{StaticResource ListValue}" Grid.Row="1" Grid.Column="1" Text="267" />
+                    <TextBlock Style="{StaticResource ListValue}" Grid.Row="2" Grid.Column="1" Text="208" />
+                    <TextBlock Style="{StaticResource ListValue}" Grid.Row="3" Grid.Column="1" Text="70" />
+                    <TextBlock Style="{StaticResource ListValue}" Grid.Row="4" Grid.Column="1" Text="253" />
+                </Grid>
+            </Grid>
+        </Border>
+        <Border x:Name="b5" MouseEnter="b5_MouseEnter" Width="180" Height="250" CornerRadius="10" Margin="480 30 0 0">
+            <Border.Background>
+                <ImageBrush ImageSource="Img/ScarletWitch.jpg" Stretch="Fill"/>
+            </Border.Background>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition/>
+                    <RowDefinition Height="80"/>
+                </Grid.RowDefinitions>
+                <Border Grid.Row="0" Height="15" Width="15" Background="White" HorizontalAlignment="Left" Margin="10 0 0 0" CornerRadius="10">
+                    <Border.Effect>
+                        <DropShadowEffect BlurRadius="10" ShadowDepth="0" Color="White" Opacity="1.5" Direction="0"/>
+                    </Border.Effect>
+                    <TextBlock Text="076" FontSize="7" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                </Border>
+                <Border Grid.Row="0" Height="20" Width="100" Background="#1083bf" CornerRadius="10 0 10 0">
+                    <TextBlock Style="{StaticResource ListValue}" Foreground="#e58d09" FontSize="20" Text="Scarlet Witch" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                </Border>
+                <Border Grid.Row="2" Background="Black" Height="65" Width="130" HorizontalAlignment="Right" Opacity="0.6"/>
+                <Grid Grid.Row="2" Background="Transparent" Height="60" Width="130" HorizontalAlignment="Right">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition Width="30"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <TextBlock Style="{StaticResource ListSkill}" Grid.Row="0" Grid.Column="0" Text="Intelligence"/>
+                    <TextBlock Style="{StaticResource ListSkill}" Grid.Row="1" Grid.Column="0" Text="Power" />
+                    <TextBlock Style="{StaticResource ListSkill}" Grid.Row="2" Grid.Column="0" Text="Speed and agility"/>
+                    <TextBlock Style="{StaticResource ListSkill}" Grid.Row="3" Grid.Column="0" Text="Special skills" />
+                    <TextBlock Style="{StaticResource ListSkill}" Grid.Row="4" Grid.Column="0" Text="Fighting skills" />
+                    <TextBlock Style="{StaticResource ListValue}" Grid.Row="0" Grid.Column="1" Text="397" />
+                    <TextBlock Style="{StaticResource ListValue}" Grid.Row="1" Grid.Column="1" Text="84" />
+                    <TextBlock Style="{StaticResource ListValue}" Grid.Row="2" Grid.Column="1" Text="187" />
+                    <TextBlock Style="{StaticResource ListValue}" Grid.Row="3" Grid.Column="1" Text="482" />
+                    <TextBlock Style="{StaticResource ListValue}" Grid.Row="4" Grid.Column="1" Text="138" />
+                </Grid>
+            </Grid>
+        </Border>
+    </Grid>
+    </Border>
+</Window>
